@@ -84,13 +84,16 @@ let store = new Vuex.Store({
             return str;
         },
         "school_all_area":function(state){
-            var str = '';
+            var arr = [];
+            // var str = '';
             state.school_area_obj.forEach((value, index) => {
                 if(value.selected){
-                    str += value.value + '，';
+                    // str += value.value + '，';
+                    arr.push(value.value)
                 }
             })
-            return str;
+            // return str;
+            return arr.join(',')
         }
     }
 })

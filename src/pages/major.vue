@@ -4,7 +4,7 @@
       <div>
         <div> <input type="text" placeholder="请输入要搜索的专业名称"> <span>检索</span></div>
       </div>
-     	<h3>选考科目分析</h3>
+     	<h3 class='title'>选考科目分析</h3>
       <div class="remind">*科目比例：要求所选选考科目的专业总数/条件范围内专业总数。以专业为例：经济统计学专业历史所占比例为66.7%，意为选考历史，66.7%的经济统计学专业均可报考。</div>
         <tab-view class="tab_list" :title_="tab_title" :list_="tab_left_list"></tab-view>
         <tab-view class="tab_list" :title_="tab_title" :list_="tab_right_list"></tab-view>
@@ -60,10 +60,11 @@ import tab_view from '../components/table_view.vue'
 <style scoped>
     .tab_list{
       float: left;
+      font-size: 16px;
     }
     .wrap{
       padding: 5px;
-      font-size: 15px;
+      font-size: 16px;
       border: 1px solid #ccc;
     }
     .select_title span{
@@ -83,6 +84,11 @@ import tab_view from '../components/table_view.vue'
     }
     .remind{
       color: #f00;
+      font-size:12px;
+    }
+    .title{
+      font-size:16px;
+      font-weight:normal;
     }
     .tab_container table{
       float: left;
