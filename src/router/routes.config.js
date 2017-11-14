@@ -4,6 +4,10 @@ import major from '../pages/major.vue'
 
 let routes = [
     {
+        path:'/',
+        redirect:'/overall'
+    },
+    {
         name:'overall',
         path:'/overall',
         component:overall
